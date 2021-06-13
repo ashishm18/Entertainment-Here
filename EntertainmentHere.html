@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Entertainment Here</title>
+    <style>
+      .purple-text {
+        color: #442d4d;
+      }
+      .yellow-text {
+         color: #f3d000;
+      }
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+      }
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      .tab button.active {
+        background-color: #ccc;
+      }
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      body {
+        background-image: url(ent3);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
+    <script>
+      function openOption(evt, optName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classNamr = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(optName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openOption(event,'Sports')">
+        Sports
+      </button>
+      <button class="tablinks" onclick="openOption(event,'Movies')">
+        Movies
+      </button>
+      <button class="tablinks" onclick="openOption(event,'WebSeries')">
+        Web Series
+      </button>
+      <button class="tablinks" onclick="openOption(event,'Books')">
+        New Books
+      </button>
+      <button class="tablinks" onclick="openOption(event,'Beaches')">
+        Beaches
+      </button>
+    </div>
+    <h1>Entertainment Here!!!!!!!!!!</h1>
+    <hr />
+    <p>
+      Welcome to our website, filled with excitement and all the entertainment
+      you will find!
+    </p>
+    <p>
+      Search our tabs to find information on Sports, Beach Resorts, Movies and
+      Web Series to watch, and all the books you will need!
+    </p>
+    <p>"The moments you cherish, the feelings you connect,
+      should always have their own space, without any regret"</p>
+      <p>Entertainment Here is absolutely the right website for you to explore, imagine, and  turn your boring time into fruitful one.</p>
+      <p> Don't you think, your hobbies, your skills and your passion only keeps you alive, rest things are just needed to survive.</p>
+      <p>So, just explore the website and we would be happy to hear any feedbacks:)</p>
+      <p> And also let us know which section entertained you the most.</p>
+    <div id="Sports" class="tabcontent">
+      <h3>Sports</h3>
+      <p>
+        Click <a href="EntertainmentHereSports.html">here</a> to see our page of
+        interesting sports that play on this website.
+      </p>
+    </div>
+    <div id="Movies" class="tabcontent">
+      <h3>Movies</h3>
+      <p>
+        Click <a href="EntertainmentHereMovies.html">here</a> to see a list of
+        movies set to play shorty here on this website!
+      </p>
+    </div>
+    <div id="WebSeries" class="tabcontent">
+      <h3>Web Series</h3>
+      <p>
+        Click <a href="EntertainmentHereWebSeries.html">here</a> to see a list
+        of interesting web series to watch here on this website!
+      </p>
+    </div>
+    <div id="Books" class="tabcontent">
+      <h3>New Books</h3>
+      <p>
+        Click <a href="EntertainmentHereBooks.html">here</a> for a list of
+        recently published books to enjoy!
+      </p>
+    </div>
+    <div id="Beaches" class="tabcontent">
+      <h3>Beaches</h3>
+      <p>
+        Click <a href="EntertainmentHereBeaches.html">here</a> for a list of
+        memes relating to beaches here on this website!
+      </p>
+    </div>
+  </body>
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"39999aefbed1b2c61d4ac574cde624734","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</html>
+</html>
